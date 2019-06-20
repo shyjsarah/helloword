@@ -1,0 +1,25 @@
+<!-- input.wxml -->
+<view class="title"> {{title}} </view>
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="section section_gap">
+    <view class="section__title">选项</view>
+    <radio-group name="radio"class="radio">
+      <label><radio value="acronym"/>缩写</label>
+      <label><radio value="chinese"/>中文</label>
+    </radio-group>
+  </view>
+  <view class="section">
+      <input name="content" class="input" placeholder="please input here" />
+     </view> 
+  <view class="btn-area">
+    <button form-type="submit">Submit</button>
+    <button form-type="reset">Reset</button>
+  </view>
+</form>
+  <view sytle="margin:10px" name="result">
+    <text class="res">{{acronym}}\n</text>
+    <text class="res">{{english}}\n</text>
+    <text class="res">{{chinese}}\n</text>
+    <text class="res">{{description}}\n</text>
+  </view> 
+

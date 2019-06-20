@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<import src="/common/head.wxml" />
+
+<view class="container">
+  <view class="head">导航</view>
+  <view class="page-body">
+      <navigator url="../input/input?title=input" class="nav" hover-class="navigator-hover">
+      输入单词
+      </navigator>
+      <navigator url="../search/search?title=search" class="nav"hover-class="navigator-hover">
+      查询单词
+      </navigator>
+  </view>
+</view>

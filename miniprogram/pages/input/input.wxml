@@ -1,0 +1,24 @@
+<!-- input.wxml -->
+<view class="title"> {{title}} </view>
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="section">
+    <view class="section__title">英文缩写</view>
+    <input name="acronym" class="input" placeholder="please input here" />
+  </view>
+  <view class="section">
+    <view class="section__title">英文全称</view>
+    <input name="english" class="input" placeholder="please input here" />
+  </view>
+  <view class="section">
+    <view class="section__title">中文</view>
+    <input name="chinese" class="input" placeholder="please input here" />
+  </view>
+   <view class="section">
+    <view class="section__title">描述</view>
+    <input name="description" class="input" placeholder="please input here" />
+  </view>
+  <view class="btn-area">
+    <button form-type="submit">Submit</button>
+    <button form-type="reset">Reset</button>
+  </view>
+</form>
